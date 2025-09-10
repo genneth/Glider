@@ -722,7 +722,7 @@
       "plot": "gerber/",
       "pos_files": "./",
       "specctra_dsn": "",
-      "step": "mb_r0p13_250414.step",
+      "step": "mb_r1p3.step",
       "svg": "./",
       "vrml": ""
     },

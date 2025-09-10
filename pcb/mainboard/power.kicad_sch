@@ -9514,7 +9514,6 @@
 	)
 	(label "EVDD"
 		(at 48.26 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9525,7 +9524,6 @@
 	)
 	(label "EVDD"
 		(at 73.66 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

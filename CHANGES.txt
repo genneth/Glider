@@ -66,8 +66,12 @@ R1.0
 1. Replace LGS5148 with LGS5145
 
 R1.1
-1. Fix DVI HPD glitch
+1. Temporary fix for DVI HPD glitch
 
 R1.2
 1. Add additional power switches for positive rails
 2. Add additional decap for VCOM measurement
+
+R1.3
+1. Proper fix for DVI HPD glitch
+2. Fix negative rail SBD connections

@@ -8184,7 +8184,6 @@
 	)
 	(label "DPAUXN"
 		(at 208.28 68.58 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8195,7 +8194,6 @@
 	)
 	(label "SBU1"
 		(at 27.94 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8206,7 +8204,6 @@
 	)
 	(label "RX2N"
 		(at 58.42 129.54 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8217,7 +8214,6 @@
 	)
 	(label "TX2P"
 		(at 58.42 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8228,7 +8224,6 @@
 	)
 	(label "RX1PC"
 		(at 101.6 116.84 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8239,7 +8234,6 @@
 	)
 	(label "SBU1"
 		(at 58.42 137.16 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8250,7 +8244,6 @@
 	)
 	(label "RX1PC"
 		(at 111.76 124.46 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8261,7 +8254,6 @@
 	)
 	(label "TX1PC"
 		(at 101.6 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8272,7 +8264,6 @@
 	)
 	(label "TX1N"
 		(at 58.42 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8283,7 +8274,6 @@
 	)
 	(label "DP0N"
 		(at 208.28 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8294,7 +8284,6 @@
 	)
 	(label "DP0P"
 		(at 208.28 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8305,7 +8294,6 @@
 	)
 	(label "RX1P"
 		(at 58.42 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8316,7 +8304,6 @@
 	)
 	(label "TX2NC"
 		(at 111.76 106.68 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8327,7 +8314,6 @@
 	)
 	(label "TX1NC"
 		(at 101.6 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8338,7 +8324,6 @@
 	)
 	(label "RX2P"
 		(at 58.42 132.08 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8349,7 +8334,6 @@
 	)
 	(label "TX1NC"
 		(at 111.76 116.84 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8360,7 +8344,6 @@
 	)
 	(label "RX2NC"
 		(at 101.6 129.54 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8371,7 +8354,6 @@
 	)
 	(label "RX2NC"
 		(at 111.76 111.76 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8382,7 +8364,6 @@
 	)
 	(label "TX2N"
 		(at 58.42 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8393,7 +8374,6 @@
 	)
 	(label "SBU2"
 		(at 27.94 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8404,7 +8384,6 @@
 	)
 	(label "CC1"
 		(at 91.44 71.12 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8415,7 +8394,6 @@
 	)
 	(label "TX2PC"
 		(at 101.6 124.46 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8426,7 +8404,6 @@
 	)
 	(label "TX1P"
 		(at 58.42 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8437,7 +8414,6 @@
 	)
 	(label "TX2NC"
 		(at 101.6 121.92 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8448,7 +8424,6 @@
 	)
 	(label "RX1NC"
 		(at 101.6 114.3 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8459,7 +8434,6 @@
 	)
 	(label "RX2PC"
 		(at 101.6 132.08 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8470,7 +8444,6 @@
 	)
 	(label "TX2PC"
 		(at 111.76 109.22 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8481,7 +8454,6 @@
 	)
 	(label "DP1N"
 		(at 208.28 58.42 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8492,7 +8464,6 @@
 	)
 	(label "CC2"
 		(at 91.44 73.66 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8503,7 +8474,6 @@
 	)
 	(label "CC2"
 		(at 27.94 50.8 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8514,7 +8484,6 @@
 	)
 	(label "CC1"
 		(at 27.94 53.34 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8525,7 +8494,6 @@
 	)
 	(label "DPAUXP"
 		(at 208.28 66.04 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8536,7 +8504,6 @@
 	)
 	(label "RX1N"
 		(at 58.42 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8547,7 +8514,6 @@
 	)
 	(label "DP1P"
 		(at 208.28 60.96 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8558,7 +8524,6 @@
 	)
 	(label "RX2PC"
 		(at 111.76 114.3 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8569,7 +8534,6 @@
 	)
 	(label "SBU2"
 		(at 58.42 139.7 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8580,7 +8544,6 @@
 	)
 	(label "RX1NC"
 		(at 111.76 121.92 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8591,7 +8554,6 @@
 	)
 	(label "TX1PC"
 		(at 111.76 119.38 0)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)

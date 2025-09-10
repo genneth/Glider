@@ -6636,7 +6636,6 @@
 	)
 	(label "FPGA_INIT"
 		(at 92.71 147.32 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
