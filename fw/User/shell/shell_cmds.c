@@ -349,11 +349,15 @@ void shell_format(shell_context_t *ctx, int argc, char **argv) {
     printf("Be patient, this may take a while.\n");
     printf("Formatting...\n");
 
+    TickType_t start = xTaskGetTickCount();
+    SPIFFS_unmount(&spiffs_fs);
     if (SPIFFS_format(&spiffs_fs) != SPIFFS_OK) {
         printf("SPIFFS format failed: %d\n", SPIFFS_errno(&spiffs_fs));
     }
+    TickType_t end = xTaskGetTickCount();
+    printf("Time spent: %d seconds\n", (end - start) / configTICK_RATE_HZ);
 
-    printf("Done.\n");
+    printf("Done. Please reset the board\n");
 }
 
 /***********************************************************************
@@ -558,6 +562,10 @@ void shell_send(shell_context_t *ctx, int argc, char **argv)
                 break;
             }
         }
+        else {
+            printf("File not found\n");
+            ret = -1;
+        }
     }
     if (ret >= 0) {
         ret = XmodemTransmit(ymodem_end, &y, 128, 0, 1,
@@ -641,7 +649,8 @@ cfg_var_t vars[] = {
     {"tcon_hsync", &(config.tcon_hsync), UINT8},
     {"tcon_hbp", &(config.tcon_hbp), UINT8},
     {"tcon_hact", &(config.tcon_hact), UINT16},
-    {"mirror", &(config.mirror), UINT8}
+    {"mirror", &(config.mirror), UINT8},
+    {"input_sel", &(config.input_sel), UINT8}
 };
 int num_vars = sizeof(vars) / sizeof(cfg_var_t);
 

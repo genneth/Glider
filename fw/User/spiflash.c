@@ -324,7 +324,7 @@ int spif_write(uint32_t addr, uint32_t size, uint8_t *dat) {
     return 0;
 }
 
-int spif_erase_block(uint32_t block) {
+int spif_erase_block(uint32_t addr) {
     QSPI_CommandTypeDef s_command;
 
     /* Initialize the erase command */
@@ -332,7 +332,7 @@ int spif_erase_block(uint32_t block) {
     s_command.Instruction       = SUBSECTOR_ERASE_CMD;
     s_command.AddressMode       = QSPI_ADDRESS_1_LINE;
     s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
-    s_command.Address           = block;
+    s_command.Address           = addr;
     s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
     s_command.DataMode          = QSPI_DATA_NONE;
     s_command.DummyCycles       = 0;
@@ -350,7 +350,7 @@ int spif_erase_block(uint32_t block) {
         return -1;
 }
 
-int spif_erase_sector(uint32_t sector) {
+int spif_erase_sector(uint32_t addr) {
     QSPI_CommandTypeDef s_command;
 
     /* Initialize the erase command */
@@ -358,7 +358,7 @@ int spif_erase_sector(uint32_t sector) {
     s_command.Instruction       = SECTOR_ERASE_CMD;
     s_command.AddressMode       = QSPI_ADDRESS_1_LINE;
     s_command.AddressSize       = QSPI_ADDRESS_24_BITS;
-    s_command.Address           = (sector * SPIF_SECTOR_SIZE);
+    s_command.Address           = addr;
     s_command.AlternateByteMode = QSPI_ALTERNATE_BYTES_NONE;
     s_command.DataMode          = QSPI_DATA_NONE;
     s_command.DummyCycles       = 0;
@@ -495,13 +495,18 @@ static uint8_t fs_fds[32 * 4];
 static uint8_t fs_cache_buf[(256 + 32) * 4];
 
 static int32_t _spiffs_erase(uint32_t addr, uint32_t len) {
-    uint32_t i = 0;
-    uint32_t erase_count = (len + 4096 - 1) / 4096;
     int res = 0;
-    for (i = 0; i < erase_count; i++) {
-        res += spif_erase_block(addr + i * 4096);
+    if ((len == SPIF_SECTOR_SIZE) && ((addr & (SPIF_SECTOR_SIZE - 1)) == 0)) {
+        res = spif_erase_sector(addr);
     }
-    return 0;
+    else {
+        uint32_t i = 0;
+        uint32_t erase_count = (len + 4096 - 1) / 4096;
+        for (i = 0; i < erase_count; i++) {
+            res += spif_erase_block(addr + i * 4096);
+        }
+    }
+    return res;
 }
 
 static int32_t _spiffs_read(uint32_t addr, uint32_t size, uint8_t *dst) {

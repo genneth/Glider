@@ -154,8 +154,9 @@ extern SemaphoreHandle_t spiffs_lock;
 #ifndef SPIFFS_CFG_PHYS_SZ
 #define SPIFFS_CFG_PHYS_SZ(ignore)        (4*1024*1024)
 #endif
+// For optimal performance, set to the same as logical block size
 #ifndef SPIFFS_CFG_PHYS_ERASE_SZ
-#define SPIFFS_CFG_PHYS_ERASE_SZ(ignore)  (4096)
+#define SPIFFS_CFG_PHYS_ERASE_SZ(ignore)  (65536)
 #endif
 #ifndef SPIFFS_CFG_PHYS_ADDR
 #define SPIFFS_CFG_PHYS_ADDR(ignore)      (0)
