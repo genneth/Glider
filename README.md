@@ -892,7 +892,7 @@ Note that for both Modos kits (6" and 13"), default setting (MONO, 8-bit) is the
 
 #### Build FPGA Gateware using GUI
 
-There are 2 ways to build the gateware. One is using Xilinx's ISE GUI, another is using build script. Both should work.
+There are 2 ways to build the gateware. One is using Xilinx's ISE GUI, another is using build script. Note that on a freshly cloned repo, you will need to build with GUI at least once to re-generate all necessary IPs.
 
 1. Open ISE Project Navigator
 2. Click `Open Project...`, open `Caster/rtl/spartan6/caster.xise`
