@@ -293,7 +293,9 @@ portTASK_FUNCTION(ui_task, pvParameters) {
             caster_osd_send_buf(osd_fb);
             caster_redraw_blank();
             caster_osd_set_enable(true);
-            sleep_ms(3000);
+            sleep_ms(200);
+            caster_redraw(0,0,2400,1800);
+            sleep_ms(600);
             power_off();
         }
         if (setmode) {

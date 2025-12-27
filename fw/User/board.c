@@ -24,7 +24,7 @@
 #include "board.h"
 #include "app.h"
 
-static loop_per_us = 0;
+static uint32_t loop_per_us = 0;
 
 size_t board_usb_get_serial(uint16_t desc_str1[], size_t max_chars) {
     uint8_t uid[16] __attribute__ ((aligned(4)));

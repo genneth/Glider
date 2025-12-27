@@ -53,47 +53,47 @@ void config_init(void) {
 //    config.tcon_hact = 400;
 
     // 1600x1200 @ 75
-    config.pclk_hz = 156618000;
-    config.hact = 1600;
-    config.vact = 1200;
-    config.hblk = 80;
-    config.hfp = 8;
-    config.hsync = 32;
-    config.vblk = 43;
-    config.vfp = 29;
-    config.vsync = 8;
-
-    config.tcon_vfp = 11;
-    config.tcon_vsync = 1;
-    config.tcon_vbp = 2;
-    config.tcon_vact = 1200;
-    // HFP + HSYNC + HBP = Incoming HBLK / 4
-    config.tcon_hfp = 16;
-    config.tcon_hsync = 2;
-    config.tcon_hbp = 2;
-    config.tcon_hact = 400;
-
-
-    // 1448x1072 @ 75
-//    config.pclk_hz = 127320000;
-//    config.hact = 1448;
-//    config.vact = 1072;
+//    config.pclk_hz = 156618000;
+//    config.hact = 1600;
+//    config.vact = 1200;
 //    config.hblk = 80;
 //    config.hfp = 8;
 //    config.hsync = 32;
-//    config.vblk = 39;
-//    config.vfp = 25;
+//    config.vblk = 43;
+//    config.vfp = 29;
 //    config.vsync = 8;
 //
 //    config.tcon_vfp = 11;
 //    config.tcon_vsync = 1;
 //    config.tcon_vbp = 2;
-//    config.tcon_vact = 1072;
+//    config.tcon_vact = 1200;
 //    // HFP + HSYNC + HBP = Incoming HBLK / 4
-//    config.tcon_hfp = 17;
+//    config.tcon_hfp = 16;
 //    config.tcon_hsync = 2;
-//    config.tcon_hbp = 1;
-//    config.tcon_hact = 362;
+//    config.tcon_hbp = 2;
+//    config.tcon_hact = 400;
+
+
+    // 1448x1072 @ 75
+    // config.pclk_hz = 127320000;
+    // config.hact = 1448;
+    // config.vact = 1072;
+    // config.hblk = 80;
+    // config.hfp = 8;
+    // config.hsync = 32;
+    // config.vblk = 39;
+    // config.vfp = 25;
+    // config.vsync = 8;
+
+    // config.tcon_vfp = 11;
+    // config.tcon_vsync = 1;
+    // config.tcon_vbp = 2;
+    // config.tcon_vact = 1072;
+    // // HFP + HSYNC + HBP = Incoming HBLK / 4
+    // config.tcon_hfp = 17;
+    // config.tcon_hsync = 2;
+    // config.tcon_hbp = 1;
+    // config.tcon_hact = 362;
 
 //    config.pclk_hz = 72509000;
 //    config.hact = 1040;
@@ -207,6 +207,8 @@ void config_init(void) {
     config.vgh = 25.0f;
 
     //config.mirror = 1;
+
+    config.input_sel = INPUT_SEL_AUTO;
 }
 
 void config_load(void) {

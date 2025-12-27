@@ -82,10 +82,12 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
     (void) report_type;
 
     // Only process CONTROL report. Other reports should not have SET_REPORT
-    if (report_id != REPORT_ID_CONTROL)
+    if (buffer[0] != REPORT_ID_CONTROL)
         return;
 
     // Process the request
+    buffer++;
+    bufsize -= 1;
     uint8_t cmd = buffer[0];
     uint16_t param = (buffer[2] << 8) | buffer[1];
     uint16_t x0 = (buffer[4] << 8) | buffer[3];
@@ -194,11 +196,14 @@ void tud_hid_set_report_cb(uint8_t instance, uint8_t report_id, hid_report_type_
 
 returnval:
     uint8_t txbuf[CFG_TUD_HID_EP_BUFSIZE] = {0};
+    txbuf[0] = REPORT_ID_CONTROL;
     txbuf[1] = retval;
-    txbuf[2] = buffer[13];
-    txbuf[3] = buffer[14];
-    txbuf[4] = exp_chksum & 0xff;
-    txbuf[5] = (exp_chksum >> 8) & 0xff;
+    txbuf[2] = cmd;
+    txbuf[3] = param;
+    txbuf[4] = buffer[13];
+    txbuf[5] = buffer[14];
+    txbuf[6] = exp_chksum & 0xff;
+    txbuf[7] = (exp_chksum >> 8) & 0xff;
 
     if (ret)
         tud_hid_report(0, txbuf, CFG_TUD_HID_EP_BUFSIZE);

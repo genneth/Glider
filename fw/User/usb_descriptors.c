@@ -26,6 +26,7 @@
 #include "tusb.h"
 #include "platform.h"
 #include "board.h"
+#include "usbapp.h"
 
 #define USB_VID   0x1209
 // PID assigned to Modos Glider. You may use this PID only if you do not make
@@ -243,12 +244,7 @@ uint8_t const desc_hid_report[] =
   0x81, 0x06,                     /*     INPUT (Data,Var,Rel)             */
   0xC0,                           /*   END_COLLECTION                     */
   0xC0,                           /* END_COLLECTION                       */
-  TUD_HID_REPORT_DESC_GENERIC_INOUT(CFG_TUD_HID_EP_BUFSIZE, HID_REPORT_ID(REPORT_ID_CONTROL))
-};
-
-uint8_t const desc_hid_report[] =
-{
-  TUD_HID_REPORT_DESC_GENERIC_INOUT(CFG_TUD_HID_EP_BUFSIZE)
+  TUD_HID_REPORT_DESC_GENERIC_INOUT(CFG_TUD_HID_EP_BUFSIZE - 1, HID_REPORT_ID(REPORT_ID_CONTROL))
 };
 
 // Invoked when received GET HID REPORT DESCRIPTOR

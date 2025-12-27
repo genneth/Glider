@@ -61,6 +61,7 @@ void fatal(char *fmt, ...) {
     // TURN OFF ALL COMPONENTS AND SHOW RED LED
     gpio_put(LED_RED, 1);
     power_off_epd();
+    sleep_us(10*1000);
     fpga_reset();
 
     va_start(args, fmt);

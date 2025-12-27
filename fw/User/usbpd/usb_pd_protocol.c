@@ -3471,6 +3471,10 @@ int pd_run_state_machine(int port)
 	}
 #endif /* CONFIG_USB_PD_DUAL_ROLE */
 
+	// If have VDM request pending, require immediate attention.
+	if ((pd[port].vdm_state == VDM_STATE_READY))
+		timeout = 0;
+
 	return timeout;
 }
 

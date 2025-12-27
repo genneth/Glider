@@ -71,9 +71,5 @@ portTASK_FUNCTION(usb_pd_task, pvParameters) {
         } while (gpio_get(TCPC_INT) == 0);
     }
 
-    while (1) {
-    	sleep_ms(100);
-    }
-
     vSemaphoreDelete(isr_sem);
 }
