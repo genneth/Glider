@@ -3329,8 +3329,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF/25V"
-			(at 209.55 69.85 90)
+		(property "Value" "1nF/25V"
+			(at 210.82 69.85 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3480,8 +3480,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF/25V"
-			(at 209.55 54.61 90)
+		(property "Value" "1nF/25V"
+			(at 210.82 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4895,8 +4895,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF/25V"
-			(at 209.55 85.09 90)
+		(property "Value" "1nF/25V"
+			(at 210.82 85.09 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7079,8 +7079,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF/50V"
-			(at 204.47 115.57 90)
+		(property "Value" "1nF/50V"
+			(at 205.74 115.57 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7337,8 +7337,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470nF/25V"
-			(at 209.55 100.33 90)
+		(property "Value" "1nF/25V"
+			(at 210.82 100.33 90)
 			(effects
 				(font
 					(size 1.27 1.27)

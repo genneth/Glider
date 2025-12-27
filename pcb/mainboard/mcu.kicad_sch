@@ -5793,6 +5793,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 73.66) (xy 40.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13178d34-0310-4ea4-8cd7-3209f7ad6a50")
+	)
+	(wire
+		(pts
 			(xy 45.72 96.52) (xy 40.64 96.52)
 		)
 		(stroke
@@ -6110,6 +6120,16 @@
 			(type default)
 		)
 		(uuid "3b284e1b-cd64-41c1-9257-dc9be6014bf5")
+	)
+	(wire
+		(pts
+			(xy 45.72 76.2) (xy 40.64 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b3cf877-9249-4561-8067-60bf6973f5b6")
 	)
 	(wire
 		(pts
@@ -8089,6 +8109,28 @@
 			)
 		)
 	)
+	(global_label "LVDS_BKLTEN"
+		(shape input)
+		(at 40.64 73.66 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1afd7770-f4fd-4add-81a7-761ae8244b81")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 25.0758 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "SDIO_DAT1"
 		(shape bidirectional)
 		(at 233.68 137.16 180)
@@ -8405,6 +8447,28 @@
 		(uuid "46674a6b-4295-4f6f-9067-1c2a20f8f650")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 27.132 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LVDS_PVCCEN"
+		(shape input)
+		(at 40.64 76.2 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "48d0b223-e896-4220-9e42-67e70000390a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 24.7129 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)

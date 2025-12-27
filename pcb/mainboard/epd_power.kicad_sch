@@ -10969,7 +10969,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-4-X1-WLB0909-4_0.89x0.89mm_P0.5mm"
+		(property "Footprint" "Package_BGA:WLP-4_0.83x0.83mm_P0.4mm"
 			(at 82.55 120.65 0)
 			(effects
 				(font
@@ -14305,7 +14305,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_CSP:WLCSP-4-X1-WLB0909-4_0.89x0.89mm_P0.5mm"
+		(property "Footprint" "Package_BGA:WLP-4_0.83x0.83mm_P0.4mm"
 			(at 82.55 41.91 0)
 			(effects
 				(font

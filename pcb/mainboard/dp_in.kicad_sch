@@ -6008,20 +6008,12 @@
 		(uuid "9e58c290-faa6-43b9-84be-78c2ebcbc524")
 	)
 	(no_connect
-		(at 256.54 134.62)
-		(uuid "a0c24c02-349e-44d7-869a-e60843283682")
-	)
-	(no_connect
 		(at 220.98 86.36)
 		(uuid "a99ec2b8-383d-4afe-bdbd-0288569c87bf")
 	)
 	(no_connect
 		(at 256.54 111.76)
 		(uuid "ab277984-8c7f-4bb4-9856-45aaab272895")
-	)
-	(no_connect
-		(at 256.54 137.16)
-		(uuid "b9dc482a-c5e5-43ac-8971-77b6e9fecc57")
 	)
 	(no_connect
 		(at 256.54 119.38)
@@ -6913,6 +6905,16 @@
 	)
 	(wire
 		(pts
+			(xy 256.54 134.62) (xy 264.16 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "69a44cc1-754c-4561-8d8e-c313fb7d6449")
+	)
+	(wire
+		(pts
 			(xy 195.58 78.74) (xy 220.98 78.74)
 		)
 		(stroke
@@ -7610,6 +7612,16 @@
 			(type default)
 		)
 		(uuid "c55f2e52-5a69-49bf-ac3d-daf0cdb308f3")
+	)
+	(wire
+		(pts
+			(xy 256.54 137.16) (xy 264.16 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c590d029-5261-4855-93c9-f0db14b8e22e")
 	)
 	(wire
 		(pts
@@ -8930,6 +8942,28 @@
 			)
 		)
 	)
+	(global_label "LVDS_PVCCEN"
+		(shape output)
+		(at 264.16 134.62 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6f679e93-bf60-4e57-b5cc-eab50c4ce90c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 280.0871 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "LVDS_EVEN_BN"
 		(shape output)
 		(at 264.16 96.52 0)
@@ -8964,6 +8998,28 @@
 		(uuid "7f77dbbb-8787-482a-9a9f-fa3faf7b1d77")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 136.0171 68.5006 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LVDS_BKLTEN"
+		(shape output)
+		(at 264.16 137.16 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "820231b5-d0a1-442d-9e3f-0c22a1e6fb4f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 279.7242 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
