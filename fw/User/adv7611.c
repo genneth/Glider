@@ -46,7 +46,7 @@ static const uint8_t adv7611_init_1[] = {
     ADV7611_I2C_ADDR,   0x01, 0x06, // Prim_mode = 110b HDMI-GR
     ADV7611_I2C_ADDR,   0x00, 0x16, // VID-STD: UXGA (for default clock)
     ADV7611_I2C_ADDR,   0x02, 0xf2, // F8 = YUV, F2 = RGB
-    ADV7611_I2C_ADDR,   0x03, 0x60, // 40 = 24bit 444 DDR
+    ADV7611_I2C_ADDR,   0x03, 0x40, // 40 = 24bit 444 SDR, 60 = 24bit 444 DDR
     ADV7611_I2C_ADDR,   0x04, 0x66, // P[23:16] V/R, P[15:8] Y/G, P[7:0] U/CrCb/B CLK=24MHz
     ADV7611_I2C_ADDR,   0x05, 0x28, // Do not insert AV codes
     ADV7611_I2C_ADDR,   0x06, 0xa6, // VS OUT SEL, F/VS/HS/LLC POL
