@@ -424,6 +424,7 @@ void ui_exit_standby(void) {
 
     // 5. Re-enable Caster
     caster_init();
+    caster_setmode(0, 0, config.hact, config.vact, modes[mode].id);
 
     syslog_printf("Exited standby mode");
 }
