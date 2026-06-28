@@ -23,6 +23,8 @@
 #include "platform.h"
 #include "board.h"
 #include "app.h"
+#include "usbpd/usb_pd.h"
+#include "usbpd/tcpm.h"
 
 static SemaphoreHandle_t isr_sem = NULL;
 bool dp_ready = false;
@@ -55,10 +57,10 @@ portTASK_FUNCTION(usb_pd_task, pvParameters) {
         BaseType_t rtos_result = xSemaphoreTake(isr_sem, pdMS_TO_TICKS(timeout/1000));
 //        if (rtos_result) {
 //            syslog_printf("FUSB302 interrupt");
-//            //fusb302_tcpc_alert(0);
+//            //tcpc_alert(0);
 //        }
         do {
-            fusb302_tcpc_alert(0);
+            tcpc_alert(0);
             timeout = pd_run_state_machine(0);
             if (dp_enabled && !hpd_sent && !pd_is_vdm_busy(0)) {
                 syslog_printf("DP enabled\n");
